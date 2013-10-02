@@ -24,6 +24,15 @@
 	background-color:#FF9900;
 }
 
+.ts_sgo a{
+	border:none;
+	text-decoration:none;
+}
+
+.ts_sgo a img{
+	border:none;
+}
+
 .ts_slideout{
 	display:block;
 	-webkit-animation-duration: .8s;
