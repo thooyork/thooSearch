@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>thooSearch</title>
+<link rel="stylesheet" href="css/screen.css" media="screen"/>
+<link rel="stylesheet" href="css/thoosearch.css" media="screen"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jQuery.thoosearch.js"></script>
+<script language="javascipt" type="text/javascript">
+	$(document).ready(function(){
+		var options = {
+			width:450,
+			placeholderText:'enter searchterm',
+			formAction:'myurl.html',			
+        	formName:'thoosearch',
+        	formId:'thoosearch',
+        	formMethod:'get',
+        	inputName:'query',
+        	buttonImage:'_gfx/magnifier.png'
+		};
+
+		$('#box').thooSearch(options);
+	});
+</script>
+</head>
+<body>
+	<div class="outercontainer">
+		<div id="box" class="box"></div>
+	</div>
+</body>
+</html>

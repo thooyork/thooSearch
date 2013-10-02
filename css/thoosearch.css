@@ -1,0 +1,80 @@
+
+.ts_wrapper{
+	margin:0 auto;
+}
+
+
+
+.ts_sbox{
+	display:block;
+	float:left;
+	overflow:hidden;
+}
+
+.ts_sbox_inner{
+	display:none;
+	background-color:#FFF;
+}
+
+.ts_sgo{
+	display:block;
+	float:right;
+	width:50px;
+	height:50px;
+	background-color:#FF9900;
+}
+
+.ts_slideout{
+	display:block;
+	-webkit-animation-duration: .8s;
+	-webkit-animation-iteration-count: 1;
+  	-webkit-animation-name: slideout;
+
+  	-moz-animation-duration: .8s;
+	-moz-animation-iteration-count: 1;
+  	-moz-animation-name: slideout;
+
+  	-o-animation-duration: .8s;
+	-o-animation-iteration-count: 1;
+  	-o-animation-name: slideout;
+
+  	animation-duration: .8s;
+	animation-iteration-count: 1;
+  	animation-name: slideout;
+
+}
+
+form{
+	padding:0;
+	margin:0;
+}
+
+.ts_input_inner{
+	display:block;
+	padding:0px 6px 0px 10px;
+	margin:0;
+	height:50px;
+	background-color:#FFF;
+	border:none;
+	font-family:'helvetica neue', helvetica, arial, sans-serif;
+	font-size:30px;
+	font-weight:100;
+	outline:none;
+}
+
+@-webkit-keyframes slideout {
+  from {margin-left: 100%;}
+  to {margin-left: 0;}
+}
+@-moz-keyframes slideout {
+  from {margin-left: 100%;}
+  to {margin-left: 0;}
+}
+@-o-keyframes slideout {
+  from {margin-left: 100%;}
+  to {margin-left: 0;}
+}
+@keyframes slideout {
+  from {margin-left: 100%;}
+  to {margin-left: 0;}
+}
