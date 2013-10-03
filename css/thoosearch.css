@@ -12,8 +12,14 @@
 }
 
 .ts_sbox_inner{
-	display:none;
+	display:block;
 	background-color:#FFF;
+	margin-left:100%;
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
 }
 
 .ts_sgo{
@@ -33,24 +39,13 @@
 	border:none;
 }
 
-.ts_slideout{
-	display:block;
-	-webkit-animation-duration: .8s;
-	-webkit-animation-iteration-count: 1;
-  	-webkit-animation-name: slideout;
-
-  	-moz-animation-duration: .8s;
-	-moz-animation-iteration-count: 1;
-  	-moz-animation-name: slideout;
-
-  	-o-animation-duration: .8s;
-	-o-animation-iteration-count: 1;
-  	-o-animation-name: slideout;
-
-  	animation-duration: .8s;
-	animation-iteration-count: 1;
-  	animation-name: slideout;
-
+.ts_slide{
+	margin-left:0;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 
 form{
@@ -69,21 +64,4 @@ form{
 	font-size:30px;
 	font-weight:100;
 	outline:none;
-}
-
-@-webkit-keyframes slideout {
-  from {margin-left: 100%;}
-  to {margin-left: 0;}
-}
-@-moz-keyframes slideout {
-  from {margin-left: 100%;}
-  to {margin-left: 0;}
-}
-@-o-keyframes slideout {
-  from {margin-left: 100%;}
-  to {margin-left: 0;}
-}
-@keyframes slideout {
-  from {margin-left: 100%;}
-  to {margin-left: 0;}
 }

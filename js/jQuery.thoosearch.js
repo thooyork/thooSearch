@@ -43,11 +43,18 @@
 
 
     el.slideOut = function(){
-        $('.ts_sbox_inner').addClass('ts_slideout');
+        //$('.ts_sbox_inner').addClass('ts_slideout');
     };
 
     el.buttonClick = function(){
-        $('#'+el.formId).submit();
+        //$('#'+el.formId).submit();
+        var inpval = $('.ts_input_inner').val();
+        if(inpval != ''){
+            $('#'+el.formId).submit();
+        }
+        else{
+            $('.ts_sbox_inner').toggleClass('ts_slide');
+        }
     };
 
 

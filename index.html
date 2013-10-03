@@ -6,13 +6,13 @@
 <link rel="stylesheet" href="css/thoosearch.css" media="screen"/>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script language="javascript" type="text/javascript" src="js/jQuery.thoosearch.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.thoosearch.js"></script>
 <script language="javascipt" type="text/javascript">
 	$(document).ready(function(){
 		var options = {
 			width:450,
 			placeholderText:'enter searchterm',
-			formAction:'myurl.html',			
+			formAction:'target.html',			
         	formName:'thoosearch',
         	formId:'thoosearch',
         	formMethod:'get',
@@ -26,7 +26,16 @@
 </head>
 <body>
 	<div class="outercontainer">
+		
+		<h3>thooSearch</h3>
 		<div id="box" class="box"></div>
+
+		<div class="text">
+			<h2>Animated searchbox jQuery plugin.</h2>
+			<p>Click magnifier icon to pull out the search input box.</p>
+		</div>
 	</div>
+
+
 </body>
 </html>
